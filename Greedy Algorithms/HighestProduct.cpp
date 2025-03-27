@@ -1,4 +1,4 @@
-/* https://www.interviewbit.com/problems/highest-product/ */
+// https://www.interviewbit.com/problems/highest-product/
 
 int Solution::maxp3(vector<int> &A) {
     sort(A.begin(), A.end());
