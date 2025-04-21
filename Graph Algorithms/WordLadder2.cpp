@@ -28,6 +28,7 @@ void trav(unordered_set<string> &words, vector<vector<string>> &ladders, int &mi
             ladders.clear();
         }
         ladders.push_back(currLadder); // Put currLadder in ladders
+        return;
     }
     
     // Find words which are one jump away
