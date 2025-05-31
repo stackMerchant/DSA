@@ -1,5 +1,7 @@
 // https://www.interviewbit.com/problems/regular-expression-match/
 
+// Do regex questions with 2D table
+
 // Solution 1 => With bool matrix
 
 int Solution::isMatch(string A, string B) {
