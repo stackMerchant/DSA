@@ -9,9 +9,9 @@ vector<int> Solution::stepnum(int A, int B) {
     int t, t1, t2;
     while (!q.empty()) {
         t = q.front(); q.pop();
-        
-        if (A <= t && t <= B) ret.push_back(t);
+
         if (B < t) continue;
+        if (A <= t) ret.push_back(t);
 
         t1 = t % 10 - 1; t2 = t % 10 + 1;
         if (0 <= t1 && t1 < 10) q.push(t * 10 + t1);
