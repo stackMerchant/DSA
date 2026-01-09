@@ -1,17 +1,18 @@
 // https://www.interviewbit.com/problems/gas-station/
 
 int Solution::canCompleteCircuit(const vector<int> &A, const vector<int> &B) {
-    int diffs = 0, N = A.size(), minIndex = 0, sum = 0;
+    int n = A.size();
+    int start = 0, gas = 0, totalDiff = 0, currDiff;
     
-    for (int i=0; i<N; i++) {
-        diffs += A[i] - B[i];
-        sum += A[i] - B[i];
-        if (sum < 0) {
-            sum = 0;
-            minIndex = i+1;
+    for (int i=0; i<n; i++) {
+        currDiff = A[i] - B[i];
+        totalDiff += currDiff;
+        gas += currDiff;
+        if (gas < 0) {
+            start = (i+1) % n;
+            gas = 0;
         }
     }
     
-    if (diffs < 0) return -1;
-    return minIndex % N;
+    return totalDiff >= 0 ? start : -1;
 }
