@@ -1,7 +1,7 @@
 // https://www.interviewbit.com/problems/word-ladder-i/
 
 /************ Solution 1 ************/
-// Here we generate adjacent words, instead of mapping over dictionary
+// Here we generate adjacent words, instead of iterating over dictionary
 // We should do this when word size is less and dictionary size is more
 
 int Solution::solve(string A, string B, vector<string> &C) {
