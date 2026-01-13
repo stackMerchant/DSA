@@ -19,7 +19,7 @@ int trav(int i, int j, int n, int m, vector<vector<int> > &A) {
     if (A[i][j] == 0) return 0; // empty cell
     if (A[i][j] == 2) return 0; // visited cell
     A[i][j] = 2; // visit the cell
-    int ret = 1;
+    int ret = 1; // count this cell
     
     for (auto [ti, tj]: getNextPoints(i, j, n, m)) {
         ret += trav(ti, tj, n, m, A);
