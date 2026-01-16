@@ -1,5 +1,7 @@
 // https://www.interviewbit.com/problems/min-cost-path/
 
+// This is with Dijkstra, can also do with deque
+
 class Point {
     public:
         int x;
