@@ -61,6 +61,7 @@ vector<int> Solution::nearestHotel(vector<vector<int>> &A, vector<vector<int>> &
 
 // Two simple diagonal traversals in opposite direction
 // As closest points will be direct horizontal and vertical steps
+// Should not work, should need both diagonal travel in both directions
 
 vector<int> Solution::nearestHotel(vector<vector<int> > &A, vector<vector<int> > &B) {
     // Initialize sizes
