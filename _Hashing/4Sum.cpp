@@ -29,3 +29,8 @@ vector<vector<int>> Solution::fourSum(vector<int> &A, int B) {
     }
     return vector<vector<int>>(ret.begin(), ret.end());
 }
+
+// Notes:
+// Compare it to question Equal in Hashing
+// Here a<b<c<d, so can be divided into 2 parts by a separator
+// In Equal, a<b, c<d, a<c, b!=c, b!=d, so will have create all pairs

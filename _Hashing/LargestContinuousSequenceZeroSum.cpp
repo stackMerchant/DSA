@@ -1,5 +1,9 @@
 // https://www.interviewbit.com/problems/largest-continuous-sequence-zero-sum/
 
+// Solution:
+// 1. Maintain left sum and find current left sum in a map
+// 2. If found it means sum from there to here is same
+
 #define ll long long
 
 vector<int> Solution::lszero(vector<int> &A) {

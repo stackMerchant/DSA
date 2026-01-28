@@ -14,3 +14,8 @@ int Solution::solve(vector<int> &A, int B) {
     }
     return count;
 }
+
+// In above question, elements are distinct, if not distinct, maintain 2 maps
+// Map 1, processed for insertion
+// Map 2, processed for answer
+// Or figure out with only one map

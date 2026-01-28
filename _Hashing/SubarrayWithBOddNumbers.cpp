@@ -3,8 +3,39 @@
 /************ Solution 1 ************/
 
 int Solution::solve(vector<int> &A, int B) {
+    // Partition by odds, and save length of each partition
+    vector<int> evens;
+    int evenTill = 0;
+    for (auto &a: A) {
+        if (a % 2 == 1) {
+            evens.push_back(evenTill);
+            evenTill = 0;
+        } else evenTill++;
+    }
+    evens.push_back(evenTill);
+    
+    // If no odd should be taken, then all subarrays of all partitions
+    int ret = 0;
+    if (B == 0) {
+        for (auto &e: evens)
+            ret += (e*(e+1)) / 2; // Number of subarrays, by 1 + 2 + ... + n
+        return ret;
+    }
+    
+    // Sigma over (partition1 + 1) * (partition2 + 1)
+    for (int i=0; i + B < evens.size(); i++)
+        ret += (evens[i] + 1) * (evens[i + B] + 1);
+    
+    return ret;
+}
+
+/************ Solution 2 ************/
+
+// Not endorsed
+
+int Solution::solve(vector<int> &A, int B) {
     // Save the number of even elements on left of each odd element, including self
-    vector<int> onLeft(N, 0);
+    vector<int> onLeft(A.size(), 0);
     int oddTill = 0;
     
     int ret = 0;
@@ -14,48 +45,4 @@ int Solution::solve(vector<int> &A, int B) {
         if(oddTill >= B) count += onLeft[oddTill - B];
     }
     return ret;
-}
-
-/************ Solution 2 ************/
-
-int Solution::solve(vector<int> &A, int B) {
-    
-    int N = A.size();
-    vector<int> evenLeft, evenRight;
-    
-    int evenTill = 0;
-    for(int i=0; i<N; i++) {
-        if(A[i] & 1) {
-            evenLeft.push_back(evenTill);
-            evenTill = 0;
-        }
-        else evenTill++;
-    }
-    
-    evenTill = 0;
-    for(int i=N-1; i>=0; i--) {
-        if(A[i] & 1) {
-            evenRight.push_back(evenTill);
-            evenTill = 0;
-        }
-        else evenTill++;
-    }
-    reverse(evenRight.begin(), evenRight.end());
-    
-    int count = 0;
-    if(B==0) { // NOTE: B = 0
-        if(evenLeft.size() == 0) {
-            return pow(2, N) - 1; // NOTE: No odd number present
-        }
-        
-        for (int i=0; i < evenLeft.size(); i++) {
-            count += pow(2, evenLeft[i]) - 1;
-        }
-        count += pow(2, evenRight.back()) - 1;
-    } else {
-        for (int i=0; i+B-1 < evenLeft.size(); i++) {
-            count += (evenLeft[i]+1)*(evenRight[i+B-1]+1);
-        }
-    }
-    return count;
 }
