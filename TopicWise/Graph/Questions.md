@@ -9,3 +9,4 @@
   - Dijksta => nlog(n)
   - Union Find => n, so union find
 - [LC 2812] Find the Safest Path in a Grid
+- [LC 815] Bus Routes

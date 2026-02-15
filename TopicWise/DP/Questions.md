@@ -5,3 +5,4 @@
 - LC 2407
 - LC 1092 *
 - [LC 10] Regular Expression Matching
+- [LC 943] Find the Shortest Superstring // not done, attempted
