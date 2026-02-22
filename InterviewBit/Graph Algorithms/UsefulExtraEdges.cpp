@@ -1,18 +1,16 @@
 // https://www.interviewbit.com/problems/useful-extra-edges/
 
 void dijk(int start, vector<vector<pair<int, int>>> &adj, vector<int> &dist) {
-    priority_queue<pair<int, int>> pq;
-    dist[start] = 0;
+    priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int,int>>> pq;
     pq.push({0, start});
     
     while (!pq.empty()) {
         auto [currDist, currNode] = pq.top(); pq.pop();
+        if (dist[currNode] != -1) continue; // if un-popped
+        dist[currNode] = currDist;
         
         for (auto [nextNode, distance]: adj[currNode]) {
-            if (dist[nextNode] == -1 || dist[nextNode] > dist[currNode] + distance) {
-                dist[nextNode] = dist[currNode] + distance;
-                pq.push({dist[nextNode], nextNode});
-            }
+            if (dist[nextNode] == -1) pq.push({currDist + distance, nextNode});
         }
     }
 }

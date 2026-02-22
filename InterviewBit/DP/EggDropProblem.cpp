@@ -1,6 +1,26 @@
 // https://www.interviewbit.com/problems/egg-drop-problem/
 
-// Solution: Reference + Binary search
+// Solution 1, preferred, TC = E*log(F)
+
+int Solution::solve(int eggs, int floors) {
+    // dp[e] = maximum floors that can be checked
+    // with current number of moves and e eggs
+    vector<long> dp(eggs + 1, 0);
+
+    int moves = 0;
+    while (dp[eggs] < floors) {
+        moves++;
+        
+        // Update from right to left to avoid overwriting
+        for (int e = eggs; e >= 1; e--) {
+            dp[e] = dp[e] + dp[e - 1] + 1;
+        }
+    }
+
+    return moves;
+}
+
+// Solution2: Reference + Binary search
 // Reference: https://www.youtube.com/watch?v=3hcaVyX00_4
 
 int getAns(int eggs, int floors, vector<vector<int>> &dp) {

@@ -10,3 +10,9 @@
 - [LC 2035] Partition Array Into Two Arrays to Minimize Sum Difference
     - Not 2D matrix, because constraints are high
     - Recursive
+
+## Do again
+
+- LC 1092, take code from AI, good solution
+- [LC 943] Shortest common superstring
+- TSP
