@@ -1,5 +1,10 @@
 # Questions
 
+## Misc
+- Serialize Deserialize
+    - save null pointers, to know when to return in recursion
+    - Level Order, BFS
+    - Preorder DFS
 
 ## Trie
 - [LC 212] Word Search 2
@@ -7,6 +12,7 @@
 
 ## AVL tree
 - Practice with this [link](https://www.geeksforgeeks.org/dsa/insertion-in-an-avl-tree/)
+- Insertion deletion and TCs
 
 ## Segment Tree & Fenwick Tree (BIT) Time Complexity comparison
 

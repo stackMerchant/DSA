@@ -5,3 +5,8 @@
 - [LC 4] Median of Two Sorted Arrays
     - Also on InterviewBit
     - [Tushar Roy explanation](https://www.youtube.com/watch?v=LPFhl65R7ww)
+
+- [LC 3116] Kth Smallest Amount With Single Denomination Combination
+    - Can monotonically generate
+    - OR can binary search on answer
+
