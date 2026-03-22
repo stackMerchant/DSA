@@ -41,6 +41,7 @@
 - [LC 2812] Find the Safest Path in a Grid
   - Multi source BFS + sort + Union find (DSU)
   - Multi source BFS + DFS
+  - TC => n^2*log(n)
 - [LC 815] Bus Routes
 - [LC 2360] Longest Cycle in a Graph
   - Topological trimming
@@ -48,6 +49,7 @@
 ## DFS
 - [LC 694] Distinct islands
 - [LC 711] Distinct islands 2
+- [LC 2065] Maximum Path Quality of a Graph
 
 ## BFS
 - [LC 773] Sliding Puzzle
