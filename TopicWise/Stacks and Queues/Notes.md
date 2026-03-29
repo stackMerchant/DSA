@@ -2,6 +2,8 @@
 
 ## Questions
 
+- [LC 3282]
+
 #### [LC 768] Max Chunks To Make Sorted II
 - Monotonic Stack
 - Maintain stack of max element of each chunk

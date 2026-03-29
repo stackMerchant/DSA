@@ -32,6 +32,8 @@
 # Questions
 
 - [[LC 2203] Minimum Weighted Subgraph With the Required Paths](https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths/description/)
+  - Dijkstra from s1, s2, dest to all
+  - Minimize, dist(n, s1) + dist(n, s2) + dist(n, dest)
 
 - [LC 2115] Find All Possible Recipes from Given Supplies
   - Topological sort

@@ -9,6 +9,7 @@
 ## Trie
 - [LC 212] Word Search 2
 - [LC 642] Design Search Autocomplete System
+- [2 Good Questions](https://leetcode.com/discuss/post/5722000/google-onsite-questions-by-anonymous_use-3vg2/)
 
 ## AVL tree
 - Practice with this [link](https://www.geeksforgeeks.org/dsa/insertion-in-an-avl-tree/)

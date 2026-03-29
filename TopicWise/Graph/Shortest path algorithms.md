@@ -21,6 +21,7 @@
 - TC => O(VE)
 - if want to calculate for every node pair, TC will become O(V^2 * E) or O(V^4), Floyd warshall does it better
 - works for both directed and undirected graphs, but in undirected graphs, a single negative edge forms a negative cycle, so negative-weight cases are only meaningful in directed graphs
+- [LC 743] Network Delay Time
 
 #### Floyd Warshall, O(V^3)
 - computes all-pairs shortest paths using DP
@@ -42,6 +43,7 @@ if (dist[i][k] != INF && dist[k][j] != INF) {
 ```
 - if diagonal distance in distance matrix is negative, then negative cycle exists
 - and for undirected graphs, same issue as Bellman-Ford
+- [LC 1334] Find the City With the Smallest Number of Neighbors at a Threshold Distance
 
 ## Questions
 - [LC 787] Cheapest Flights Within K Stops
