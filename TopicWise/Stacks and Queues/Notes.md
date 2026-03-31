@@ -2,6 +2,9 @@
 
 ## Questions
 
+- [LC 394] Decode String
+- [LC 32] Longest Valid Parentheses
+    - InterviewBit [link](https://www.interviewbit.com/problems/longest-valid-parentheses/)
 - [LC 3282]
 
 #### [LC 768] Max Chunks To Make Sorted II

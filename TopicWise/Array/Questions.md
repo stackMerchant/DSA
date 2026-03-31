@@ -4,6 +4,9 @@
 
 
 ## Sorting
+- [LC 759] Employee Free Time
+- [LC 435] Non-overlapping Intervals
+    - Sort by end time, and just not count overlapping intervals, voila
 
 
 # Array Questions

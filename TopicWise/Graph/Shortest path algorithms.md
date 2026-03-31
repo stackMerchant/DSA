@@ -44,12 +44,17 @@ if (dist[i][k] != INF && dist[k][j] != INF) {
 - if diagonal distance in distance matrix is negative, then negative cycle exists
 - and for undirected graphs, same issue as Bellman-Ford
 - [LC 1334] Find the City With the Smallest Number of Neighbors at a Threshold Distance
+  - V^3
 
 ## Questions
 - [LC 787] Cheapest Flights Within K Stops
   - Dijkstra with stops as part of state
     - TC => kElog(kV)
     - SC => kV
-  - Bellman-ford, k+1 iterations // NOT DONE
+  - Bellman-ford, k+1 iterations, as total nodes in path from src to dest is k+2
     - TC => kE
     - SC => V
+- [LC 1631] Path With Minimum Effort
+  - Binary Search + BFS, TC => (mn)*log(maxHeight)
+  - Modified Dijkstra, TC => (mn)*log(mn)
+  - Disjoint set / Union find, TC => (mn)*log(mn)

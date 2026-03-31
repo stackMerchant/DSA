@@ -4,6 +4,12 @@
 - Distinct Subsequences
     - [LC 940] Distinct Subsequences II
     - [LC 1987] Number of Unique Good Subsequences (only binary chars)
+- [LC 416] Partition Equal Subset Sum
+- [LC 1235] Maximum Profit in Job Scheduling
+    - Sort by start/end, then leave or take (find next by Binary Search)
+- Paint House
+    - [LC 256] Paint House, TC => O(n)
+    - [LC 265] Paint House II, TC => O(n * k^2) => improved to => O(n * k)
 
 ## To be or not be
 - LC 392, then LC 792
@@ -21,7 +27,10 @@
         - Maintain sorted set/tree for whole tree array
         - If you reache same index with same move direction, then infinite cycle
         - TC => (2n) * log(n) // 2n because n positions and for each position 2 directions
-- [LC 416] Partition Equal Subset Sum
+- [LC 727] Minimum Window Subsequence
+    - Good question
+    - See approach [here](https://www.hellointerview.com/learn/code/dynamic-programming/minimum-window-subsequence)
+    - TC => O(mn)
 
 ## Do again
 - LC 1092, take code from AI, good solution

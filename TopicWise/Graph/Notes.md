@@ -45,8 +45,12 @@
   - Multi source BFS + DFS
   - TC => n^2*log(n)
 - [LC 815] Bus Routes
+  - Do it
 - [LC 2360] Longest Cycle in a Graph
   - Topological trimming
+- [LC 417] Pacific Atlantic Water Flow
+  - DFS from edges
+  - TC => O(mn)
 
 ## DFS
 - [LC 694] Distinct islands
@@ -55,3 +59,6 @@
 
 ## BFS
 - [LC 773] Sliding Puzzle
+- Multi source BFS or sweep in 4 directions
+  - [LC 542] 01 Matrix
+  - [LC 1765] Map of Highest Peak
