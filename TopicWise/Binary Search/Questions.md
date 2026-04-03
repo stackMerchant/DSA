@@ -10,9 +10,12 @@
     - Can monotonically generate
     - OR can binary search on answer
 
-- Search on answer
+- Interview Question
+    - Search on answer
     - [LC 1283] Find the Smallest Divisor Given a Threshold
     - [Minimum Shipping Capacity](https://www.hellointerview.com/learn/code/binary-search/minimum-shipping-capacity)
     - TC => (nm)log(max), n is number of box types, m is avg box per type
 
-
+- Interview Question
+    - Search on answer
+    - [Round 2 here](https://leetcode.com/discuss/post/5966234/google-bangalore-experience-l4-by-anonym-yf6f/)

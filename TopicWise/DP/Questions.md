@@ -1,6 +1,10 @@
 # DP questions
 
 ## Done
+- LIS
+    - Standard => n^2
+    - Optimized => nlog(n)
+    - [LC 354] Russian Doll Envelopes
 - Distinct Subsequences
     - [LC 940] Distinct Subsequences II
     - [LC 1987] Number of Unique Good Subsequences (only binary chars)
@@ -10,6 +14,9 @@
 - Paint House
     - [LC 256] Paint House, TC => O(n)
     - [LC 265] Paint House II, TC => O(n * k^2) => improved to => O(n * k)
+- Subsequence DP problem
+    - [Link](https://leetcode.com/discuss/post/6934675/google-recent-dp-count-subsequences-vari-m22y/)
+    - Solve it by n X 4 dp table, 4 states being => 1even, 2even, 1odd, 2odd
 
 ## To be or not be
 - LC 392, then LC 792
@@ -39,3 +46,5 @@
 
 ## Not done
 - [LC 3287] Find the Maximum Sequence Value of Array
+- [LC 2338] Count the Number of Ideal Arrays
+- [LC 3149] Find the Minimum Cost Array Permutation

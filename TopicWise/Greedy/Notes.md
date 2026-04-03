@@ -10,4 +10,10 @@
 - [LC 767] Reorganize String
 - [LC 846] Hand of Straights & [LC 1296] Divide Array in Sets of K Consecutive Numbers
 - [LC 1642] Furthest Building You Can Reach
+- Interview question
+    - [Link](https://leetcode.com/discuss/post/6789894/l4-google-question-by-anonymous_user-pork/)
+    - Count balls of each color, pack them in same color bags, ni/k bags
+    - ni % k balls left of each color
+    - max(rem[i]) bags more required
+
 
