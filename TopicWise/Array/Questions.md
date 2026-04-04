@@ -24,5 +24,18 @@
     - Running remainder
 
 
-- Knapsack with only 1/2, SEE
+# Count number freq
+- Formula => frequency=(i+1)×(n−i)
+- Array => 12345
+```
+1 2 3 4 5
+12 23 34 45
+123 234 345
+1234 2345
+12345
+```
+
+
+# See solution
+- Knapsack with only 1/2
 - K smallest on left, SEE

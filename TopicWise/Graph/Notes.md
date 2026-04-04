@@ -77,6 +77,12 @@
   - [Link](https://leetcode.com/discuss/post/6759221/google-swe-phone-screen-l3-by-anonymous_-hhgm/)
   - Find connected components, then check are they square
   - TC => O(mn)
+- [LC 3481] Apply Substitutions
+  - Recursively simplify strings
+  - TC => nl + kl
+    - n is length of original string to be replaced with k -> v
+    - k is all the keys
+    - l is avg length of value strings
 
 ## BFS
 - [LC 773] Sliding Puzzle

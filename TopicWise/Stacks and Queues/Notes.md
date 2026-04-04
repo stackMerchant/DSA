@@ -25,3 +25,14 @@
     - [Link](https://leetcode.com/problems/remove-k-digits/description/)
     - [Similar/inspired](https://leetcode.com/discuss/post/5293722/phone-screen-by-anonymous_user-zl2c/)
 
+- [LC 218] The Skyline Problem
+    - Aggregate points of ranges, heights to be added & heights to be removed
+    - But do not use prioity queue, use Self Balancing Binary Search Tree, AVL tree
+    - Final TC => nlog(n)
+
+- [LC 1851] Minimum Interval to Include Each Query
+    - Sort both intervals and queries
+    - Iterate over queries and maintain a pq
+        - Keep adding in pq while interval is valid
+        - Keep removing from pq while top interval is in valid
+        - Record min window for current query
