@@ -3,6 +3,16 @@
 - [Link](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/description/)
 - [Solution explanation](https://www.youtube.com/watch?v=5AY70aAHZiQ)
 
+- Brute force is n^2
+- Better approach with pq
+    - Calculate running prefix and put it in pq
+    - Use pq to find minimum prefix that we can subtract to get sum >= k
+    - Pop after processing
+- Best approach with monotonic stack
+    - Use a monotonic increasing Deque
+    - Check from back and remove for processed sums
+    - Check from front and remove bigger prefixes
+
 
 ```cpp
 class Solution {

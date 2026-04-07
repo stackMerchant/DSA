@@ -17,7 +17,7 @@
     - [Link](https://leetcode.com/discuss/post/6696099/google-l3-onsite-r3-by-anonymous_user-8nma/)
 - [LC 1944] Number of Visible People in a Queue
     - Monotonic stack
-- [LC 768] Max Chunks To Make Sorted II
+- [LC 768]* Max Chunks To Make Sorted II
     - Monotonic Stack
     - Maintain stack of max element of each chunk
 - [LC 402] Remove K Digits
@@ -34,5 +34,13 @@
     - Sort both intervals and queries
     - Iterate over queries and maintain a pq
         - Keep adding in pq while interval is valid
-        - Keep removing from pq while top interval is in valid
+        - Keep removing from pq while top interval is invalid
         - Record min window for current query
+
+# Lessons
+- In monotonic stack, clear by new item, but push max/min item
+    - [LC 768]
+- [LC 862]
+    - Do prefix sum and maintain a map of prefix sum
+    - Or maintain a pq of prefix sum
+    - Or do it in linear by a incresing deque

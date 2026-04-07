@@ -10,10 +10,10 @@
   - Bellman–Ford, O(VE)
   - Floyd Warshall, O(V^3)
 - constrained dijkstras, (save costs and some states):
-  - Limited stops/hops	(cost, node, stops)
-  - Fuel constraints	(cost, node, fuel_left)
-  - Must-visit checkpoints	(cost, node, visited_mask)
-  - Time windows	(cost, node, arrival_time)
+  - Limited stops/hops (cost, node, stops)
+  - Fuel constraints (cost, node, fuel_left)
+  - Must-visit checkpoints (cost, node, visited_mask)
+  - Time windows (cost, node, arrival_time)
 
 #### Bellman–Ford, O(VE)
 - if dist[v] > dist[u] + w, then update dist and parent

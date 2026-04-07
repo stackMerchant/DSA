@@ -1,8 +1,14 @@
 # Segment Tree Questions
 
-- [LC 2407]
-- [LC 715] Range Module
+## Lesson
+- [LC 2250]
 
+## Questions
+- [LC 2407] Longest Increasing Subsequence II
+    - Good question
+- [LC 715] Range Module
+    - Can be done by maintaining a sorted set of disjoint intervals, but TC => O(n) even with binary search
+    - Segment tree does it in log(n)
 - [LC 2250] Count Number of Rectangles Containing Each Point
     - Tweaked question with no limits [link](https://leetcode.com/discuss/post/4979440/google-online-assessment-by-anonymous_us-u3is/)
     - Sort servers and queries
@@ -14,5 +20,11 @@
     - 2D segment tree
     - Works becuase GCD is associative
 
-## Not done
 - [LC 850] Rectangle Area II
+    - Brute force
+        - Get all unique (x, y), sort them and consider them as small cells => n^2 cells
+        - For each cell check if it is in any rectangle => n checks
+        - TC => n^3
+    - Optimized
+        - Sweep x cordinates, at each x coordinate, add/remove y range in segment tree
+        - TC => nlog(n) + nlog(m), m is y coordinates, segment tree will have m elements

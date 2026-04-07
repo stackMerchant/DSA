@@ -1,5 +1,7 @@
 # Articulation in Graph
 
+- Tarjan's Algo
+- TC => O(V+E)
 - If practicing, do articulation edge/bridge first then articulation point
 - Edge's code is simple and easy to understand, modify it for vertex/point
 
